@@ -1,8 +1,92 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+/* Mobile First Approach */
+@media screen and (max-width: 767px) {
+  /* Adjustments for small screens */
+
+  /* Example: Reduce padding in sections for smaller screens */
+  .section {
+    padding: 4rem 0 1rem;
+  }
+
+  /* Example: Make the header and navigation more compact */
+  .l-header {
+    height: var(--header-height);
+  }
+  .nav {
+    height: var(--header-height);
+  }
+  .nav_menu {
+    top: var(--header-height);
+  }
+  .nav_item {
+    margin-bottom: var(--mb-2);
+  }
+
+  /* Example: Make the logo smaller */
+  .nav_logo {
+    font-size: 1rem;
+  }
+
+  /* Example: Adjust font size in certain elements */
+  .home_title,
+  .home_subtitle {
+    font-size: 1.5rem;
+  }
+
+  /* Example: Adjust grid columns for foods on smaller screens */
+  .foods_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Add more specific adjustments based on your design and content */
+
+  /* ... */
+}
+
+/* Larger screens (tablets and above) */
+@media screen and (min-width: 768px) {
+  /* Adjustments for larger screens */
+
+  /* Example: Increase padding in sections for larger screens */
+  .section {
+    padding: 8rem 0 2rem;
+  }
+
+  /* Example: Make the header and navigation taller */
+  .l-header {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  /* Example: Make the logo larger */
+  .nav_logo {
+    font-size: 1.2rem;
+  }
+
+  /* Example: Adjust font size in certain elements */
+  .home_title,
+  .home_subtitle {
+    font-size: 2rem;
+  }
+
+  /* Example: Adjust grid columns for foods on larger screens */
+  .foods_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Add more specific adjustments based on your design and content */
+
+  /* ... */
+}
+
+
 /*===== VARIABLES CSS =====*/
 :root {
+  
   --header-height: 4rem;
 
   /*========== Colors ==========*/
